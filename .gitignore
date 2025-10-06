@@ -4,34 +4,61 @@ __pycache__/
 *$py.class
 *.so
 .Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Virtual Environment
+# Virtual environments
 venv/
-ENV/
 env/
-.venv
-
-# Jupyter
-.ipynb_checkpoints
+ENV/
 
 # IDE
-.idea/
 .vscode/
+.idea/
 *.swp
-*~
+*.swo
 
-# Model checkpoints (large files)
-*.pth
-*.zip
-PPO_preTrained/
-SAC_preTrained/
-SAC_preTrained_uneven/
-
-# OS files
+# OS
 .DS_Store
 Thumbs.db
-*.log
 
-# Temporary
+# Logs and temporary files
+*.log
 *.tmp
-*.bak
+*.temp
+
+# Model checkpoints (keep final ones only)
+PPO_preTrained/*/
+SAC_preTrained/*/
+SAC_preTrained_uneven/*/
+
+# Training logs (keep final ones only)
+PPO_logs/*/
+SAC_logs/*/
+SAC_logs_uneven/*/
+
+# Images (keep only essential ones)
+*.jpg
+*.jpeg
+*.png
+!sac_comparison.png
+!training_graphs/*.png
+
+# Documentation (keep only main README)
+*.md
+!README.md
+!LICENSE
+!requirements.txt
