@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# Jupyter
+.ipynb_checkpoints
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# Model checkpoints (large files)
+*.pth
+*.zip
+PPO_preTrained/
+SAC_preTrained/
+SAC_preTrained_uneven/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.log
+
+# Temporary
+*.tmp
+*.bak
